@@ -1,0 +1,20 @@
+package cucumberOptions;
+
+import org.junit.runner.RunWith;
+
+import io.cucumber.junit.Cucumber;
+import io.cucumber.junit.CucumberOptions;
+
+@RunWith(Cucumber.class)
+@CucumberOptions(
+        dryRun = false,
+        features = "src/test/java/features",
+        glue = "stepDefinitions",
+        monochrome = true,
+        plugin = { "pretty", "html:target/site/cucumber-report-default.html", "json:target/site/cucumber.json" },
+        snippets = CucumberOptions.SnippetType.CAMELCASE,
+        tags = "@Regression"
+)
+public class TestRunner {
+
+}
