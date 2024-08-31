@@ -12,7 +12,7 @@ import io.cucumber.junit.CucumberOptions;
         monochrome = true,
         plugin = { "pretty", "html:target/site/cucumber-report-default.html", "json:target/site/cucumber.json" },
         snippets = CucumberOptions.SnippetType.CAMELCASE,
-        tags = "@datatable_step"
+        tags = "@datatable_step2"
 )
 public class TestRunner {
 

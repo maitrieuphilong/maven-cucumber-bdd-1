@@ -61,11 +61,10 @@ public class FacebookStep {
 	
 	@When("Use multi input to Username and Password")
 	public void useMultiInputToUsernameAndPassword(DataTable dataTable) {
-//		List<Map<String, String>> customer = dataTable.asMaps(String.class, String.class);
 		for(Map<String, String> loginInfo: dataTable.asMaps(String.class, String.class)) {
-			System.out.println("Multi Username: " + loginInfo.get("Username"));
-			System.out.println("Multi Password: " + loginInfo.get("Password"));
-			System.out.println("Multi Address: " + loginInfo.get("Address"));
+			System.out.println("Value Username: " + loginInfo.get("Username"));
+			System.out.println("Value Password: " + loginInfo.get("Password"));
+			System.out.println("Value Address: " + loginInfo.get("Address"));
 		}
 	}
 }

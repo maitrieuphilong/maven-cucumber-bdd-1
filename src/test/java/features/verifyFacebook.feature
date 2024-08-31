@@ -10,7 +10,7 @@ Feature: Facebook login page
   @datatable_step
   Scenario: Create new Customer
     Given Open facebook website
-    And Use multi input to Username and Password
+    When Use multi input to Username and Password
       | Username     | Password | Address      |
       | a1@gmail.com | 12132123 | Cong Hoa     |
       | a2@gmail.com | 45514554 | Truong Chinh |
